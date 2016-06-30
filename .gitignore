@@ -21,3 +21,15 @@ gen
 .idea/runConfigurations.xml
 .idea/workspace.xml
 .idea/vcs.xml
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+*/build/
+/captures
+*.apk
+class_files.txt
+mapping.txt
+seeds.txt
+unused.txt
