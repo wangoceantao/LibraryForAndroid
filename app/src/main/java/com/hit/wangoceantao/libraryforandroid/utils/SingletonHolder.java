@@ -7,10 +7,6 @@ import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Message;
 
-import com.android.volley.RequestQueue;
-import com.android.volley.toolbox.Volley;
-import com.leo.wifi.WMApplication;
-
 import java.util.LinkedList;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
@@ -27,9 +23,6 @@ public class SingletonHolder {
     private static ScheduledThreadPoolExecutor mExecutor;
     private static Object mLock4Executor = new Object();
 
-    private static RequestQueue mRequestQueue;
-    private static Object mLock4RequestQueue = new Object();
-
     private static SerialExecutor mSerialExecutor;
     private static Object mLock4SerialExecutor = new Object();
 
@@ -39,27 +32,6 @@ public class SingletonHolder {
     private static Object mLock4Handler = new Object();
     private static Handler mHandler;
 
-    public interface AsynExecutCommomResult {
-        public void onSuccessed();
-        public void onFailed();
-    }
-
-    /**
-     * 获取RequestQueue的实例
-     * 
-     * @return RequestQueue对象
-     */
-    public static RequestQueue getRequestQueueInstance() {
-        if (mRequestQueue == null) {
-            synchronized (mLock4RequestQueue) {
-                if (mRequestQueue == null) {
-                    mRequestQueue = Volley.newRequestQueue(WMApplication.getInstance());
-                }
-            }
-        }
-
-        return mRequestQueue;
-    }
 
     /**
      * 获取ScheduledThreadPoolExecutor的实例
