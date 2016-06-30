@@ -7,6 +7,8 @@ import com.hit.wangoceantao.libraryforandroid.BuildConfig;
 
 /**
  * Custom Log class, add catch exception and crash support
+ *
+ * @author wangoceantao@gmail.com
  */
 
 public class LogEx {

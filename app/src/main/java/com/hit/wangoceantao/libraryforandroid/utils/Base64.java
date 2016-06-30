@@ -1,5 +1,8 @@
 package com.hit.wangoceantao.libraryforandroid.utils;
 
+/**
+ * @author wangoceantao@gmail.com
+ */
 public final class Base64 {
 
 	private static final int BASELENGTH = 128;

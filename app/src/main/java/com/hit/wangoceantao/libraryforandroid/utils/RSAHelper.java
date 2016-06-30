@@ -22,7 +22,7 @@ import javax.crypto.Cipher;
 
 
 /**
- * @author Mr.Zheng
+ * @author wangoceantao@gmail.com
  * @date 2014年8月22日 下午1:44:23
  */
 public final class RSAHelper {

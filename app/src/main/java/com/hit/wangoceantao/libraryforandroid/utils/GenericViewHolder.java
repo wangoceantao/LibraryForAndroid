@@ -3,6 +3,10 @@ package com.hit.wangoceantao.libraryforandroid.utils;
 import android.util.SparseArray;
 import android.view.View;
 
+/**
+ *
+ * @author wangoceantao@gmail.com
+ */
 public class GenericViewHolder {
     @SuppressWarnings("unchecked")
     public static <T extends View> T get(View view, int id) {

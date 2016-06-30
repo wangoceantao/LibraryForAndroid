@@ -12,6 +12,9 @@ import javax.crypto.SecretKey;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.DESKeySpec;
 
+/**
+ * @author wangoceantao@gmail.com
+ */
 public class DESUtil {
     //算法名称
     private static final String KEY_ALGORITHM = "DES";

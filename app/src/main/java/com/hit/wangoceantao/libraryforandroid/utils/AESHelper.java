@@ -8,7 +8,7 @@ import javax.crypto.spec.SecretKeySpec;
 /**
  * AES加密解密类
  *
- * @author ligang
+ * @author wangoceantao@gmail.com
  */
 public class AESHelper {
     /** 算法/模式/填充 **/
